@@ -3,9 +3,9 @@ var Navigation = require('Navigation');
 
 var Main = ({children}) =>
     <div>
-      <div>
-        <div>
-          <Navigation/>
+      <Navigation/>
+      <div className="row">
+        <div className="column small-centered medium-6 large-4">
           {children}
         </div>
       </div>
