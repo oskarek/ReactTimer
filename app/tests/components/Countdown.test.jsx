@@ -4,7 +4,7 @@ var expect = require('expect');
 var $ = require('jQuery');
 var TestUtils = require('react-addons-test-utils');
 
-var {Countdown, CountdownStatus} = require('Countdown');
+var Countdown = require('Countdown');
 
 describe('Countdown', () => {
   it('should exist', () => {
@@ -17,7 +17,7 @@ describe('Countdown', () => {
       countdown.handleSetCountdown(10);
 
       expect(countdown.state.count).toBe(10);
-      expect(countdown.state.countdownStatus).toBe(CountdownStatus.STARTED);
+      expect(countdown.state.countdownStatus).toBe("started");
 
       setTimeout(() => {
         expect(countdown.state.count).toBe(9);
